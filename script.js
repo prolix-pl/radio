@@ -15,7 +15,7 @@ const stations = [
         audio: 'sounds/station3.mp3'
     }
 ];
-//
+
 let currentStationIndex = 0;
 let currentTextIndex = 0;
 const stationTitle = document.getElementById('station-title');
