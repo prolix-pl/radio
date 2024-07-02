@@ -7,16 +7,16 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #1e1e1e 0%, #3a3a3a 100%);
-    color: #fff;
+    background-color: #121212; /* Ciemny kolor tła */
+    color: #ffffff; /* Biały tekst */
     text-align: center;
 }
 
 #app {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 #station-container {
@@ -27,15 +27,13 @@ body {
     font-size: 2em;
     margin: 0;
     animation: neon-fade-in-out 1s ease-in-out;
-    color: #00e5ff;
-    text-shadow: 0 0 5px #00e5ff, 0 0 10px #00e5ff, 0 0 20px #00e5ff, 0 0 40px #00e5ff, 0 0 80px #00e5ff;
 }
 
 #station-text {
     font-size: 1.2em;
     margin: 10px 0;
-    color: #00e5ff;
-    text-shadow: 0 0 5px #00e5ff, 0 0 10px #00e5ff, 0 0 20px #00e5ff, 0 0 40px #00e5ff, 0 0 80px #00e5ff;
+    color: #39ff14; /* Neonowy kolor tekstu */
+    text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14;
 }
 
 .neon-fade-in-out {
@@ -51,8 +49,8 @@ body {
 button {
     padding: 10px 20px;
     font-size: 1em;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff; /* Biały tekst na przyciskach */
+    background-color: #333333; /* Ciemny kolor tła przycisków */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -60,7 +58,7 @@ button {
 }
 
 button:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background-color: #555555; /* Ciemniejszy kolor tła po najechaniu */
 }
 
 button i {
@@ -78,7 +76,7 @@ audio {
     }
     50% {
         opacity: 1;
-        text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff, 0 0 30px #00e5ff, 0 0 40px #00e5ff;
+        text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
     }
     100% {
         opacity: 0;
