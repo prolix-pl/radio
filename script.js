@@ -18,11 +18,9 @@ const stations = [
 
 let currentStationIndex = 0;
 let currentTextIndex = 0;
-let clickCount = 0; // Number of clicks
 const stationTitle = document.getElementById('station-title');
 const stationText = document.getElementById('station-text');
 const audioPlayer = document.getElementById('audio-player');
-const colorPicker = document.getElementById('color-picker');
 
 function updateStation() {
     const station = stations[currentStationIndex];
@@ -42,27 +40,6 @@ function updateText() {
         currentTextIndex = (currentTextIndex + 1) % station.texts.length;
     }, 1000); // Match this to the animation duration
 }
-
-function changeColor() {
-    const color = colorPicker.value;
-    stationTitle.style.color = color;
-    stationText.style.color = color;
-    stationTitle.style.textShadow = `0 0 5px ${color}, 0 0 10px ${color}, 0 0 20px ${color}, 0 0 40px ${color}, 0 0 80px ${color}`;
-    stationText.style.textShadow = `0 0 5px ${color}, 0 0 10px ${color}, 0 0 20px ${color}, 0 0 40px ${color}, 0 0 80px ${color}`;
-}
-
-stationTitle.addEventListener('click', () => {
-    clickCount++;
-    if (clickCount >= 3) {
-        colorPicker.style.display = 'block';
-        colorPicker.focus();
-        clickCount = 0; // Reset the click count after showing color picker
-    }
-});
-
-colorPicker.addEventListener('input', () => {
-    changeColor();
-});
 
 document.getElementById('prev-btn').addEventListener('click', () => {
     currentStationIndex = (currentStationIndex - 1 + stations.length) % stations.length;
