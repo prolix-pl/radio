@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="station-container">
+            <p id="station-text">Tekst 1</p>
+        </div>
+        <div class="buttons">
+            <button id="prev-btn"><i class="fas fa-arrow-left"></i> Poprzednia</button>
+            <button id="next-btn">Następna <i class="fas fa-arrow-right"></i></button>
+        </div>
+        <!-- Color picker (hidden by default) -->
+        <input type="color" id="color-picker" value="#00e5ff" style="display:none;">
+    </div>
+    <audio id="audio-player" controls hidden>
+        <source src="sounds/station1.mp3" type="audio/mpeg">
+    </audio>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
