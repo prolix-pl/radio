@@ -1,13 +1,16 @@
 const stations = [
     {
+        title: 'Stacja 1',
         texts: ['Tekst 1.1', 'Tekst 1.2', 'Tekst 1.3'],
         audio: 'sounds/station1.mp3'
     },
     {
+        title: 'Stacja 2',
         texts: ['Tekst 2.1', 'Tekst 2.2', 'Tekst 2.3'],
         audio: 'sounds/station2.mp3'
     },
     {
+        title: 'Stacja 3',
         texts: ['Tekst 3.1', 'Tekst 3.2', 'Tekst 3.3'],
         audio: 'sounds/station3.mp3'
     }
@@ -16,6 +19,7 @@ const stations = [
 let currentStationIndex = 0;
 let currentTextIndex = 0;
 let clickCount = 0; // Number of clicks
+const stationTitle = document.getElementById('station-title');
 const stationText = document.getElementById('station-text');
 const audioPlayer = document.getElementById('audio-player');
 const colorPicker = document.getElementById('color-picker');
